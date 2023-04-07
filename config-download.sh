@@ -66,7 +66,7 @@ else
     echo "$FILE not present, nice..."
 fi
 
-rm -rf ~/.tmp/*
+rm -rf ~/.tmp
 
 echo "Done!"
 exit 0

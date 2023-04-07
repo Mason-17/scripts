@@ -21,6 +21,6 @@ else
     echo "Error: Directory catppuccin does not exist."
 fi
 
-rm -rf ~.tmp/*
+rm -rf ~.tmp
 
 echo "Finished without errors!"
