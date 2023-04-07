@@ -56,7 +56,7 @@ if test -f "$FILE"; then
 else
     echo "$FILE doesn't exist, something went wrong..."
     exit 1
-
+fi
 rm -r ~/.tmp
 
 echo "Done!"
