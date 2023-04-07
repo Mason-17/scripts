@@ -64,6 +64,7 @@ if test -f "$FILE"; then
     rm ~/.config/polybar/config
 else
     echo "$FILE not present, nice..."
+fi
 
 rm -rf ~/.tmp/*
 
