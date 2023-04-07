@@ -2,11 +2,12 @@
 
 user="$USER"
 
-if [ -d "home/$USER/Pictures/Backgrounds" ]
+if [ -d "/home/$USER/Pictures/Backgrounds" ]
 then
     echo "Backgrounds exists, updating..."
 else
     echo "Backgrounds doesn't exist, creating in [username]/Pictures..."
+    mkdir ~/Pictures/Backgrounds
 fi
 
 git clone https://github.com/Mason-17/wallpapers ~/.tmp
