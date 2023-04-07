@@ -42,21 +42,20 @@ mv ~/.tmp/polybar/config.ini ~/.config/polybar/
 mv ~/.tmp/polybar/scripts/player-mpris-simple.sh ~/.config/polybar/scripts/
 chmod +x ~/.config/polybar/scripts/player-mpris-simple.sh
 
-if [ -d "/home/$USER/.config/polybar/config.ini" ]
-then
-    echo "config.ini exists, checking rest..."
-else   
-    echo "Something went wrong, it seems..."
-    exit 1
-fi 
-
-if [ -d "/home/$USER/.config/polybar/scripts/player-mpris-simple.sh" ]
-then 
-    echo "player-mpris-simple.sh exists, finishing up..."
+FILE=/home/$USER/.config/polybar/config.ini
+if test -f "$FILE"; then
+    echo "$FILE exists, moving on..."
 else
-    echo "Something went wrong, it seems..."
+    echo "$FILE doesn't exist, something went wrong..."
     exit 1
 fi
+
+FILE=/home/$USER/.config/polybar/scripts/player-mpris-simple.sh
+if test -f "$FILE"; then
+    echo "$FILE exists, moving on..."
+else
+    echo "$FILE doesn't exist, something went wrong..."
+    exit 1
 
 rm -r ~/.tmp
 
