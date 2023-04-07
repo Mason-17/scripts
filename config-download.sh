@@ -40,7 +40,8 @@ fi
 
 mv ~/.tmp/polybar/config.ini ~/.config/polybar/
 mv ~/.tmp/polybar/scripts/player-mpris-simple.sh ~/.config/polybar/scripts/
-chmod +x ~/.config/polybar/scripts/player-mpris-simple.sh
+mv ~/.tmp/polybar/launch.sh ~/.config/polybar/
+chmod +x ~/.config/polybar/scripts/player-mpris-simple.sh launch.sh
 
 FILE=/home/$USER/.config/polybar/config.ini
 if test -f "$FILE"; then
