@@ -57,7 +57,15 @@ else
     echo "$FILE doesn't exist, something went wrong..."
     exit 1
 fi
-rm -r ~/.tmp
+
+FILE=/home/$USER/.config/polybar/config
+if test -f "$FILE"; then
+    echo "$FILE exists, deleting now..."
+    rm ~/.config/polybar/config
+else
+    echo "$FILE not present, nice..."
+
+rm -rf ~/.tmp/*
 
 echo "Done!"
 exit 0
