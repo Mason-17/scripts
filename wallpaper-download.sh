@@ -24,7 +24,8 @@ fi
 
 rm -rf ~/.tmp
 
-if [ -d "/home/$USER/.tmp" ] then
+if [ -d "/home/$USER/.tmp" ]
+then
     echo "Cleanup successful..."
 else 
     echo "Error, .tmp still exists, exiting..."
