@@ -22,7 +22,7 @@ else
     exit 1
 fi
 
-rm -rf ~/.tmp
+rm -rf ~/home/$USER/.tmp
 
 if [ -d "/home/$USER/.tmp" ]
 then
