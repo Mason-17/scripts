@@ -10,9 +10,9 @@ else
     mkdir ~/Pictures/Backgrounds
 fi
 
-git clone https://github.com/Mason-17/wallpapers ~/.tmp
+git clone https://github.com/Mason-17/wallpapers ~/.wall
 
-rsync -a ~/.tmp/ ~/Pictures/Backgrounds
+rsync -a ~/.wall/ ~/Pictures/Backgrounds
 
 if [ -d "/home/$USER/Pictures/Backgrounds/catppuccin" ] 
 then
@@ -22,9 +22,9 @@ else
     exit 1
 fi
 
-rm -rf ~/home/$USER/.tmp
+rm -rf ~/home/$USER/.wall
 
-if [ -d "/home/$USER/.tmp" ]
+if [ ! -d "/home/$USER/.wall" ]
 then
     echo "Cleanup successful..."
 else 
