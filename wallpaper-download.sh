@@ -22,7 +22,7 @@ else
     exit 1
 fi
 
-rm -r ~/home/$USER/.wall
+rm -rf ~/.wall
 
 if [ ! -d "/home/$USER/.wall" ]
 then
