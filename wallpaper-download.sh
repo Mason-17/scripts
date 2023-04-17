@@ -22,13 +22,13 @@ else
     exit 1
 fi
 
-rm -rf ~/home/$USER/.wall
+rm -r ~/home/$USER/.wall
 
 if [ ! -d "/home/$USER/.wall" ]
 then
     echo "Cleanup successful..."
 else 
-    echo "Error, .tmp still exists, exiting..."
+    echo "Error, .wall still exists, exiting..."
     exit 1
 fi
 
