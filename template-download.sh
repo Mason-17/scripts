@@ -12,7 +12,7 @@ fi
 
 git clone https://github.com/Mason-17/templates ~/.templ
 
-rsync -a ~/.templ/ ~/Templates
+rsync -a ~/.templ/templates ~/Templates
 
 rm -rf ~/.templ
 
